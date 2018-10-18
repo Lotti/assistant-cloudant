@@ -1,0 +1,15 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git/",
+    "logs/",
+    "node_modules/",
+    "node_modules/**/node_modules",
+    "public/"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node --inspect=3001"
+  },
+  "ext": "js,json,yaml"
+}

@@ -1,0 +1,17 @@
+applications:
+- name: sdg-group-app
+  command: npm start
+  disk_quota: 1G
+  env:
+    NODE_ENV: 'production'
+    NODE_MODULES_CACHE: 'true'
+    ASSISTANT_URL: ''
+    ASSISTANT_USERNAME: ''
+    ASSISTANT_PASSWORD: ''
+    ASSISTANT_WORKSPACE: ''
+    CLOUDANT_URL: ''
+    CLOUDANT_DB: ''
+  instances: 1
+  memory: 256M
+  routes:
+  - route: sdg-group-app.eu-gb.mybluemix.net
